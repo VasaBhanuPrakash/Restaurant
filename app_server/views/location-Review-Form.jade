@@ -1,0 +1,26 @@
+extends layout 
+block content 
+    .row.page-header 
+        .col-lg-12
+            h1=title 
+    .row 
+        .col-xs-12.col-md-12
+            form#signin.form-horizontal(action= 'url', method='post', role='form')
+                .form-group
+                    label.col-xs-10.col-sm-2.control-label(for='name')  Name
+                        .col-xs-12.col-sm-10
+                            input#name.form-control(name='name',placeholder='Enter your name')
+                .form-group
+                    label.col-xs-10.col-sm-2.control-label(for='name') Dish Name 
+                        .col-xs-12.col-sm-10
+                            input#name.form-control(type='password',placeholder='Enter the dish you have ordered')
+                .form-group 
+                    label.col-xs-10.col-sm-2.control-table(for='name') Rating 
+                        .col-xs-12.col-sm-10 
+                            select#name.form-control(name='name')
+                                option 5
+                                option 4
+                                option 3
+                                option 2
+                                option 1 
+            a(href='/') Submit

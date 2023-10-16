@@ -1,5 +1,4 @@
 const mongoose = require('mongoose'); 
-  
 var dbURI = "mongodb://0.0.0.0:27017/Food_Court"; 
 const PORT =  process.env.PORT || 5000;
 var gracefulShutdown;

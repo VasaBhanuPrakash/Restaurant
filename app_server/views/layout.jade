@@ -1,5 +1,5 @@
 doctype html
-html
+html(ng-app='loc8rapp')
     head
         meta(name='viewport', content='width=device-width, initial-scale=1.0')
         title = title
@@ -14,14 +14,19 @@ html
                         span.icon-bar
                         span.icon-bar
                         span.icon-bar
-                #navbar-main.navbar-collapse.collapse
-                    ul.nav.navbar-nav
+                    #navbar-main.navbar-collapse.collapse
+                        ul.nav.navbar-nav 
+                            a(href='/about') About 
+                            a(href='/register') Register 
+                            a(href='/signin') Signin
         .container
             block content
                 footer
                     .row
                         .col-xs-12
                             h1 hello
-                            small &copy;Manoj Patel
+                            small &copy; Bhanu Prakash
+        script(src='/angular/angular.min.js')
+        script(src='/angular/loc8rApp.js')
         script(src='/javascripts/jquery-1.11.1.min (1).js')
         script(src='/bootstrap/js/bootstrap.min.js')

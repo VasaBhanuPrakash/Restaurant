@@ -1,0 +1,19 @@
+extends layout 
+block content 
+    .row.page-header 
+        .col-lg-12
+            h1=title 
+    .row 
+        .col-xs-12.col-md-12
+            form#signin.form-horizontal(action= 'url', method='post', role='form')
+                .form-group
+                    label.col-xs-10.col-sm-2.control-label(for='name',placeholder='Enter your Email')  Email
+                        .col-xs-12.col-sm-10
+                            input#name.form-control(name='name')
+                .form-group
+                    label.col-xs-10.col-sm-2.control-label(for='password') Password
+                        .col-xs-12.col-sm-10
+                            input#name.form-control(type='password',id='password',placeholder='Enter your Password')
+            a(href='/location/review/new')
+                button.btn.btn-default.pull-right Log In
+        .col-xs-12.col-md-4

@@ -1,0 +1,40 @@
+extends layout 
+block content 
+    .row.page-header 
+        .col-lg-12 
+            h1=title
+    .row 
+        .col-xs-12.col-md-5 
+            a(href='signin')
+                button.btn.btn-default.pull-right Log In
+            button.btn.btn-default.pull-right Register 
+            <br>
+            form#register.form-horizontal(action='url',method='post',role='form')
+                .form-group
+                    label.col-xs-10.col-sm-12.control-label(for='name',padding=0)  First Name
+                        .col-xs-12.col-sm-10
+                            input#name.form-control(name='name',placeholder='Enter your First Name')
+                    label.col-xs-10.col-sm-12.control-label(for='name') Last Name
+                        .col-xs-12.col-sm-10
+                            input#name.form-control(name='name',placeholder='Enter your last Name')
+                .form-group
+                    label.col-xs-10.col-sm-12.control-label(for='number') Mobile Number
+                        .col-xs-12.col-sm-10
+                            input#name.form-control(type='number',placeholder='Enter your Ph no')
+                .form-group
+                    label.col-xs-10.col-sm-12.control-label(for='name') Email
+                        .col-xs-12.col-sm-10
+                            input#name.form-control(name='name',placeholder='Enter your Email')
+                .form-group
+                    label.col-xs-10.col-sm-12.control-label(for='password') Password
+                        .col-xs-12.col-sm-10
+                            input#name.form-control(type='password',placeholder='Enter your password')
+                .form-group
+                    .col-xs-12.col-sm-2
+                        input#name.form-control(type="checkbox",id="checkboxId",name="checkboxName",value="checkboxValue")
+                    .col-xs-12.col-sm-12 
+                        label.col-xs-10.col-sm-2.control-label(for='name') I am Not a Robot
+            a(href='signin')
+                button.btn.btn-default.pull-right Submit
+        .col-xs-12.col-md-4
+        
